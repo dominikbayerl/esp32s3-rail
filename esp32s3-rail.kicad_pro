@@ -429,6 +429,34 @@
     [
       "43c3dd73-0dcc-48c9-a061-d039af0cb18f",
       "Root"
+    ],
+    [
+      "df982c01-fbe2-4878-8b67-6a103b3ec576",
+      "RS485"
+    ],
+    [
+      "5e787e43-5b8a-4614-b287-ea016178f20e",
+      "input"
+    ],
+    [
+      "b222144e-c035-4a11-8732-e813d234bae8",
+      "input3"
+    ],
+    [
+      "dc4966d3-7e9b-4032-82c6-d7e31a4ad808",
+      "input2"
+    ],
+    [
+      "63a5f8e6-ff0a-4b95-bbb9-6c2b3a358e57",
+      "input4"
+    ],
+    [
+      "dfbed89b-ddc3-4d39-a084-cb1a54bcdf38",
+      "input5"
+    ],
+    [
+      "e204b866-5aa7-46b0-ad23-b761a62cde22",
+      "input6"
     ]
   ],
   "text_variables": {}
