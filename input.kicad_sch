@@ -890,6 +890,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3.3V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_names
@@ -971,131 +1096,6 @@
 					(length 0)
 					(hide yes)
 					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:VDD"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VDD"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VDD\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VDD_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VDD_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1360,7 +1360,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "066b6abf-0e7f-4b86-b15e-3cb9f5f4c93e")
-		(property "Reference" "R22"
+		(property "Reference" "R23"
 			(at 168.91 92.7099 0)
 			(effects
 				(font
@@ -1406,35 +1406,35 @@
 			)
 		)
 		(pin "2"
-			(uuid "0f62e845-f106-407f-a5aa-453a375a4105")
+			(uuid "ee844f04-c5bb-4b99-beec-6dfac8bd79c5")
 		)
 		(pin "1"
-			(uuid "09699f26-14ef-4bf5-9bd0-222cbcde78cd")
+			(uuid "06613b19-b665-457a-8d28-966c90e88adc")
 		)
 		(instances
 			(project "esp32s3-rail"
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/5e787e43-5b8a-4614-b287-ea016178f20e"
-					(reference "R22")
+					(reference "R23")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/63a5f8e6-ff0a-4b95-bbb9-6c2b3a358e57"
-					(reference "R41")
+					(reference "R34")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/b222144e-c035-4a11-8732-e813d234bae8"
-					(reference "R38")
+					(reference "R26")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dc4966d3-7e9b-4032-82c6-d7e31a4ad808"
-					(reference "R35")
+					(reference "R31")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dfbed89b-ddc3-4d39-a084-cb1a54bcdf38"
-					(reference "R44")
+					(reference "R37")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/e204b866-5aa7-46b0-ad23-b761a62cde22"
-					(reference "R47")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -1469,7 +1469,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 140.97 104.14 0)
 			(effects
 				(font
@@ -1497,10 +1497,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "356c5687-98a5-43eb-863d-4a2aa80b5939")
+			(uuid "3991ad81-1ae1-4350-b720-87cd5a1727bc")
 		)
 		(pin "2"
-			(uuid "d1ec9b67-654f-4bf9-b8fc-72cd7af30134")
+			(uuid "2af8346a-ab33-4f77-9074-1cfb381d4266")
 		)
 		(instances
 			(project "esp32s3-rail"
@@ -1509,11 +1509,11 @@
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/63a5f8e6-ff0a-4b95-bbb9-6c2b3a358e57"
-					(reference "C29")
+					(reference "C28")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/b222144e-c035-4a11-8732-e813d234bae8"
-					(reference "C28")
+					(reference "C26")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dc4966d3-7e9b-4032-82c6-d7e31a4ad808"
@@ -1521,11 +1521,11 @@
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dfbed89b-ddc3-4d39-a084-cb1a54bcdf38"
-					(reference "C30")
+					(reference "C29")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/e204b866-5aa7-46b0-ad23-b761a62cde22"
-					(reference "C31")
+					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -1541,7 +1541,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4ad0f14f-f8bc-423e-a3d8-fa5d0160a17d")
-		(property "Reference" "D2"
+		(property "Reference" "D4"
 			(at 133.35 102.8699 90)
 			(effects
 				(font
@@ -1559,7 +1559,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
 			(at 135.89 104.14 0)
 			(effects
 				(font
@@ -1587,35 +1587,35 @@
 			)
 		)
 		(pin "2"
-			(uuid "d8a96972-4df3-43b1-b978-b1fe8224cc7c")
+			(uuid "d4c2df50-9021-4bde-98c4-99530d660972")
 		)
 		(pin "1"
-			(uuid "1adace3d-0557-4c2c-a52c-06c6a579f6a3")
+			(uuid "0cf2d358-b137-4eca-9a7c-48f950912be1")
 		)
 		(instances
 			(project "esp32s3-rail"
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/5e787e43-5b8a-4614-b287-ea016178f20e"
-					(reference "D2")
+					(reference "D4")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/63a5f8e6-ff0a-4b95-bbb9-6c2b3a358e57"
-					(reference "D7")
-					(unit 1)
-				)
-				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/b222144e-c035-4a11-8732-e813d234bae8"
-					(reference "D6")
-					(unit 1)
-				)
-				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dc4966d3-7e9b-4032-82c6-d7e31a4ad808"
-					(reference "D5")
-					(unit 1)
-				)
-				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dfbed89b-ddc3-4d39-a084-cb1a54bcdf38"
 					(reference "D8")
 					(unit 1)
 				)
-				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/e204b866-5aa7-46b0-ad23-b761a62cde22"
+				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/b222144e-c035-4a11-8732-e813d234bae8"
+					(reference "D5")
+					(unit 1)
+				)
+				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dc4966d3-7e9b-4032-82c6-d7e31a4ad808"
+					(reference "D7")
+					(unit 1)
+				)
+				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dfbed89b-ddc3-4d39-a084-cb1a54bcdf38"
 					(reference "D9")
+					(unit 1)
+				)
+				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/e204b866-5aa7-46b0-ad23-b761a62cde22"
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -1630,7 +1630,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7b24e01f-c3e0-4e73-8c09-9cfe1ffb486f")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR056"
 			(at 149.86 116.84 0)
 			(effects
 				(font
@@ -1675,32 +1675,32 @@
 			)
 		)
 		(pin "1"
-			(uuid "748cddce-23a0-4033-9d98-306c86280d3d")
+			(uuid "b30b55cd-8dcf-4957-85f3-f0902f52240e")
 		)
 		(instances
 			(project "esp32s3-rail"
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/5e787e43-5b8a-4614-b287-ea016178f20e"
-					(reference "#PWR093")
+					(reference "#PWR056")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/63a5f8e6-ff0a-4b95-bbb9-6c2b3a358e57"
-					(reference "#PWR0109")
+					(reference "#PWR067")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/b222144e-c035-4a11-8732-e813d234bae8"
-					(reference "#PWR0107")
+					(reference "#PWR059")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dc4966d3-7e9b-4032-82c6-d7e31a4ad808"
-					(reference "#PWR0105")
+					(reference "#PWR064")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dfbed89b-ddc3-4d39-a084-cb1a54bcdf38"
-					(reference "#PWR0111")
+					(reference "#PWR070")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/e204b866-5aa7-46b0-ad23-b761a62cde22"
-					(reference "#PWR0113")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -1717,7 +1717,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a42fb276-5f65-4f7d-9a8c-c708336b6265")
-		(property "Reference" "R11"
+		(property "Reference" "R22"
 			(at 147.32 93.98 90)
 			(effects
 				(font
@@ -1761,35 +1761,35 @@
 			)
 		)
 		(pin "1"
-			(uuid "f7145d5c-9d3f-46b0-a025-9d66e635203f")
+			(uuid "7820da99-821e-469e-a0e1-999165be7f96")
 		)
 		(pin "2"
-			(uuid "743d3242-7a73-4f31-8c9b-3cffb3c90e3f")
+			(uuid "36b06d76-08ba-448a-9e95-305c70aadfa1")
 		)
 		(instances
 			(project "esp32s3-rail"
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/5e787e43-5b8a-4614-b287-ea016178f20e"
-					(reference "R11")
+					(reference "R22")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/63a5f8e6-ff0a-4b95-bbb9-6c2b3a358e57"
-					(reference "R40")
+					(reference "R33")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/b222144e-c035-4a11-8732-e813d234bae8"
-					(reference "R37")
+					(reference "R25")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dc4966d3-7e9b-4032-82c6-d7e31a4ad808"
-					(reference "R34")
+					(reference "R30")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dfbed89b-ddc3-4d39-a084-cb1a54bcdf38"
-					(reference "R43")
+					(reference "R36")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/e204b866-5aa7-46b0-ad23-b761a62cde22"
-					(reference "R46")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -1806,7 +1806,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b709152a-14d0-4448-bc5a-c59ba933c1ff")
-		(property "Reference" "R12"
+		(property "Reference" "R21"
 			(at 132.08 93.98 90)
 			(effects
 				(font
@@ -1850,42 +1850,42 @@
 			)
 		)
 		(pin "1"
-			(uuid "db16bae3-62a2-48f8-8d16-9ce4e611a249")
+			(uuid "e3c0100e-f21d-4ee2-8e8a-25f3fd66d0b5")
 		)
 		(pin "2"
-			(uuid "924cf8c5-4899-4c78-ac2d-7d6829877ae4")
+			(uuid "109cf722-4ba9-4c59-9b1d-4fd7d3ee3cdb")
 		)
 		(instances
 			(project "esp32s3-rail"
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/5e787e43-5b8a-4614-b287-ea016178f20e"
-					(reference "R12")
+					(reference "R21")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/63a5f8e6-ff0a-4b95-bbb9-6c2b3a358e57"
-					(reference "R39")
+					(reference "R32")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/b222144e-c035-4a11-8732-e813d234bae8"
-					(reference "R36")
+					(reference "R24")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dc4966d3-7e9b-4032-82c6-d7e31a4ad808"
-					(reference "R33")
+					(reference "R29")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dfbed89b-ddc3-4d39-a084-cb1a54bcdf38"
-					(reference "R42")
+					(reference "R35")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/e204b866-5aa7-46b0-ad23-b761a62cde22"
-					(reference "R45")
+					(reference "R38")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
+		(lib_id "power:+3.3V")
 		(at 166.37 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1893,8 +1893,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e3885b49-06c6-46c4-981d-b780ec300e68")
-		(property "Reference" "#PWR017"
+		(uuid "c58cdd7c-9a24-4a12-a30d-4f711248210a")
+		(property "Reference" "#PWR057"
 			(at 166.37 92.71 0)
 			(effects
 				(font
@@ -1903,7 +1903,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VDD"
+		(property "Value" "+3.3V"
 			(at 166.37 83.82 0)
 			(effects
 				(font
@@ -1929,7 +1929,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 166.37 88.9 0)
 			(effects
 				(font
@@ -1939,32 +1939,32 @@
 			)
 		)
 		(pin "1"
-			(uuid "ef77f464-6ece-4b4d-8cd9-f45b4da5d51d")
+			(uuid "99bd91fd-94b9-4bdb-83bc-fbf08cc5a268")
 		)
 		(instances
-			(project "esp32s3-rail"
+			(project ""
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/5e787e43-5b8a-4614-b287-ea016178f20e"
-					(reference "#PWR017")
+					(reference "#PWR057")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/63a5f8e6-ff0a-4b95-bbb9-6c2b3a358e57"
-					(reference "#PWR026")
+					(reference "#PWR068")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/b222144e-c035-4a11-8732-e813d234bae8"
-					(reference "#PWR025")
+					(reference "#PWR060")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dc4966d3-7e9b-4032-82c6-d7e31a4ad808"
-					(reference "#PWR024")
+					(reference "#PWR065")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dfbed89b-ddc3-4d39-a084-cb1a54bcdf38"
-					(reference "#PWR027")
+					(reference "#PWR071")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/e204b866-5aa7-46b0-ad23-b761a62cde22"
-					(reference "#PWR028")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -2027,22 +2027,22 @@
 			)
 		)
 		(pin "6"
-			(uuid "e78906d9-ed4e-4381-9e84-2fe0623b045b")
+			(uuid "09d1a06d-5bce-4c13-aa74-9697c9aa4374")
 		)
 		(pin "1"
-			(uuid "00ade1c6-c260-4022-87d9-8cda31d59dd5")
+			(uuid "e29b3d57-7605-4f71-9ece-c71b297e9c65")
 		)
 		(pin "2"
-			(uuid "9b70a6f7-a492-4612-937b-aa870b586289")
+			(uuid "df7cd5b7-ccac-4b34-9c7c-dd66eaac6dab")
 		)
 		(pin "3"
-			(uuid "e6d461d2-e3c6-48d4-aab9-4e38fbc59f22")
+			(uuid "5b3cd39f-c0bd-4231-a19c-8168288dbe68")
 		)
 		(pin "5"
-			(uuid "d912bd93-0c26-4b1a-8d67-f20348889779")
+			(uuid "584dc11c-c732-4c32-97c7-650adc16ef8f")
 		)
 		(pin "4"
-			(uuid "00300e01-306f-4196-8748-9a58e9d229b5")
+			(uuid "3e742c03-06f0-4102-b79b-fa9ed130d14b")
 		)
 		(instances
 			(project "esp32s3-rail"
@@ -2051,23 +2051,23 @@
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/63a5f8e6-ff0a-4b95-bbb9-6c2b3a358e57"
-					(reference "U15")
+					(reference "U10")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/b222144e-c035-4a11-8732-e813d234bae8"
-					(reference "U14")
+					(reference "U8")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dc4966d3-7e9b-4032-82c6-d7e31a4ad808"
-					(reference "U13")
+					(reference "U9")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dfbed89b-ddc3-4d39-a084-cb1a54bcdf38"
-					(reference "U16")
+					(reference "U11")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/e204b866-5aa7-46b0-ad23-b761a62cde22"
-					(reference "U17")
+					(reference "U12")
 					(unit 1)
 				)
 			)
@@ -2082,7 +2082,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "febcf6da-bb0e-4070-b747-29aca35423a4")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR058"
 			(at 166.37 116.84 0)
 			(effects
 				(font
@@ -2127,32 +2127,32 @@
 			)
 		)
 		(pin "1"
-			(uuid "961ecf9d-e9c9-49a9-bf48-a262109221e8")
+			(uuid "a12f6c49-273c-4d29-98cd-64ac175f14e0")
 		)
 		(instances
 			(project "esp32s3-rail"
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/5e787e43-5b8a-4614-b287-ea016178f20e"
-					(reference "#PWR094")
+					(reference "#PWR058")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/63a5f8e6-ff0a-4b95-bbb9-6c2b3a358e57"
-					(reference "#PWR0110")
+					(reference "#PWR069")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/b222144e-c035-4a11-8732-e813d234bae8"
-					(reference "#PWR0108")
+					(reference "#PWR061")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dc4966d3-7e9b-4032-82c6-d7e31a4ad808"
-					(reference "#PWR0106")
+					(reference "#PWR066")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/dfbed89b-ddc3-4d39-a084-cb1a54bcdf38"
-					(reference "#PWR0112")
+					(reference "#PWR072")
 					(unit 1)
 				)
 				(path "/43c3dd73-0dcc-48c9-a061-d039af0cb18f/e204b866-5aa7-46b0-ad23-b761a62cde22"
-					(reference "#PWR0114")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
